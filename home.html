@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>home_page</title>
+        <style>
+           body {
+                background-image:url("https://wallpaperaccess.com/full/1347996.jpg");                
+                color: olive;
+                text-aline: center;
+            }
+            #blink {
+                font-size: 20px;
+                font-weight: bold;
+                color: orange;
+                animation: blink 0.2s steps(0.2s, end) infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Home page -->
+        <nav class="nav">
+            <b><a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled">Disabled</a><b/>
+        </nav>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        </div>
+        <!-- Spinner -->
+        <div>
+            <center><a href="/chat" id="blink"><h1>Chat</h1></a></center>
+         
+         <script type="text/javascript">
+            var blink = document.getElementById('blink');
+            setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            }, 1500);
+        </script>
+        </div>
+        
+    </body>
+</html>

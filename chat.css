@@ -1,0 +1,215 @@
+
+/*{box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+/*.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}*/
+
+/* The popup chat - hidden by default */
+/*.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}*/
+
+/* Add styles to the form container */
+/*.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}*/
+
+/* Full-width textarea */
+/*.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+*/
+/* When the textarea gets focus, do something */
+/*.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+*/
+/* Set a style for the submit/login button */
+/*.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+*/
+/* Add a red background color to the cancel button */
+/*.form-container .cancel {
+    background-color: red;
+}*/
+
+/* Add some hover effects to buttons */
+/*.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+} */
+
+
+body {
+    background: #72b8ff;
+    font-family: helvetica, sans-serif;
+}
+.casing{
+    border: 1px solid #000;
+    width: 300px;
+    height: 550px;
+    margin: auto;
+    padding: 20px;
+    background: #333 linear-gradient(65deg, #333 60%, #444 60%, #333 100%);
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px #444, 3px 3px 1px #555, 4px 4px 0px #666;
+}
+.window {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #fff;
+    width: 100%;
+    height: calc(100% - 50px);
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.header{
+    background: #ededed;
+    padding: 10px;
+    margin: -10px -10px 8px -10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.home-btn{
+    height: 45px;
+    width: 45px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 23px;
+    border: 1px solid #444;
+    background: #222;
+}
+.home-btn .hb-square{
+    background: none;
+    width: 23px;
+    height: 23px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid #444;
+}
+
+.chat{
+    background: #72b8ff;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    font-weight: lighter;
+    font-size: small;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    margin: 5px;
+    position: relative;
+}
+.chat.u1{
+    float: left;
+    clear: both;
+    border-top-left-radius: 0px;
+}
+.chat.u1:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid #72b8ff;
+    border-top: 5px solid #72b8ff;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+}
+.chat.u2{
+    float: right;
+    clear: both;
+    border-top-right-radius: 0px;
+    background: #00D025;
+}
+.chat.u2:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-left: 5px solid #00D025;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #00D025;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    top: 0px;
+    right: -10px;
+}
+
+.new-chat{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: #ededed;
+    height: 40px;
+    left: 0px;
+    border-top: 1px solid #ddd;
+}
+.new-chat input{
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 250px;
+    height: 40px;
+    border: none;
+    display: inline-block;
+    color: #999;
+    font-weight: 100;
+    background: #ddd;
+}
+.new-chat button{
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    display: inline-block;
+    border: none;
+    color: #00D025;
+    background: none;
+    position: relative;
+    top: -3px;
+    outline: none;
+    cursor: pointer;
+}
+.new-chat button:active{
+    color: #555;
+}

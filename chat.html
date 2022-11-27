@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chat</title>
+        <style>
+.casing{
+    width: 500px;
+    height: 700px;
+    margin: auto;
+    background: none;
+}
+.window {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #fff;
+    width: 100%;
+    height: calc(100% - 50px);
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background: #2f4f4f;
+}
+.header{
+    background: #ededed;
+    padding: 1px;
+    margin: -10px -10px 8px -10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background: #696969;
+}
+.chat{
+    background: #72b8ff;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 10px;
+    color: #f4f4f;
+    font-weight: lighter;
+    font-size: small;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    margin: 5px;
+    position: relative;
+   background: #72b8ff;
+}
+.chat.u1{
+    float: left;
+    clear: both;
+    border-top-left-radius: 0px;
+}
+.chat.u2{
+    float: right;
+    clear: both;
+    border-top-right-radius: 0px;
+    background: #00D025;
+}
+.new-chat{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: #ededed;
+    height: 50px;
+    left: 30px;
+    border-top: none;
+    background: #2f4f4f;
+}
+.new-chat input{
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 350px;
+    height: 40px;
+    border: none;
+    display: inline-block;
+    color: red;
+    font-weight: 100;
+    background: #008080;
+    
+}
+
+.new-chat button{
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    display: inline-block;
+    border: none;
+    color: #00D025;
+    background: none;
+    position: relative;
+    top: -3px;
+    background-color: #04AA6D;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Set a style for the send button */
+.form-container .btn .{
+    
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    width: 16%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    
+}
+
+
+        </style>
+        
+    </head>
+    <body>
+        <!-- Navbar -->
+       <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="/chat">Re-fresh</a><br><br>
+            <a class="flex-sm-fill text-sm-center nav-link" href="/">Exit</a><br><br>
+            <a class="flex-sm-fill text-sm-center nav-link disabled">Report</a><br><br>
+        </nav>
+        <!-- ChatBox-->
+        <div class="casing">
+            <div class="window">
+                <div class="header"><h1>Chat</h1></div>
+                <div class="chats">
+                    <span class="u1 chat">Hey sam, whats up?</span>
+                    <span class="u2 chat">nothing here how 'bout u?</span>
+                    <span class="u1 chat">I'm just heading up to your neck of the woods for some work related stuff.</span>
+                    <span class="u1 chat">driveing through mcdonalds right now</span>
+                <form class="new-chat" >
+                
+                    <input type="text" id="message" required>
+                    <button id="send" href="/chat">Send</button>
+                </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function openForm() {
+                document.getElementById("u1 chat").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            } 
+        </script>
+    </body>
+</html>
+
+
+
