@@ -24,4 +24,5 @@ def unknown():
         "What does that mean?",
         "I don't know what you looking for plz ask me again!"
     ][random.randrange(5)]
+    # Vijay-chopade
     return response
